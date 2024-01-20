@@ -24,7 +24,7 @@ const ApartmentCard = ({
       style={styles.container}
     >
       <Card.Content>
-        <Title>{data.address} </Title>
+        <Title style={styles.header}>{data.address} </Title>
         <Paragraph>{data.description}</Paragraph>
       </Card.Content>
       <Card.Cover source={{ uri: image }} />
@@ -35,4 +35,5 @@ const ApartmentCard = ({
 export default ApartmentCard;
 const styles = StyleSheet.create({
   container: { width: 350, margin: 20 },
+  header: { fontWeight: "bold" },
 });
